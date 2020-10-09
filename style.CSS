@@ -1,0 +1,141 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+#navbar {
+    display: grid;
+    grid-template-columns: 90px 130px 1fr 60px 90px 60px 60px;
+    grid-template-rows: 50px;
+    grid-template-areas:
+    "chi-siamo google-store . gmail immagini app-google account";
+}
+
+a, p {
+    text-decoration: none;
+    color: #000;
+    opacity: 0.75;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    justify-self: center;
+    align-self: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#chi-siamo {
+    grid-area: chi-siamo;
+    
+}
+
+#google-store {
+    grid-area: google-store;
+    
+}
+
+#gmail {
+    grid-area: gmail;
+   
+}
+
+#immagini {
+    grid-area: immagini;
+    
+}
+
+#app-google{
+    grid-area: app-google;
+    
+}
+#account{
+    grid-area: account;
+    
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 70px 70px 300px;
+    grid-template-areas: 
+    ". main-logo ."
+    ". search-bar ."
+    ". flexbox ."
+    ". service-language .";
+}
+
+#flexbox {
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center;
+
+}
+
+#main-logo {
+    grid-area: main-logo;
+    justify-self: center;
+    align-self: flex-end;
+}
+
+#search-bar {
+    width: 100%;
+    height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-area: search-bar;
+    align-self: center;
+    border-radius: 15px;
+}
+
+#search-bar:hover {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+#service-language {
+    grid-area: service-language;
+    justify-self: center;
+    align-self: flex-start; 
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 100px 150px 150px 1200px 100px 100px 100px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "pubblicità solaz researchfunc . privacy termini impostazioni";
+}
+
+#pubblicità {
+    grid-area: pubblicità;
+    
+}
+
+#solaz {
+    grid-area: soluzioni aziendali;    
+}
+
+#researchfunc {
+    grid-area: researchfunc;
+    
+}
+
+#privacy {
+    grid-area: privacy;
+    
+}
+
+#termini {
+    grid-area: termini;
+    
+}
+
+#impostazioni {
+    grid-area: impostazioni;
+    
+}
